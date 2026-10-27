@@ -1,0 +1,32 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "MlopsDemo1"
+version = "0.0.1"
+description = "A machine learning project that analyzes semiconductor wafer manufacturing data to detect defects and classify wafers as normal or defective, improving manufacturing quality and reliability."
+authors = [
+  { name = "Boligorla Lokesh" },
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License"
+]
+requires-python = "==3.14.6"
+
+
+[tool.ruff]
+line-length = 99
+src = ["MlopsDemo1"]
+include = ["pyproject.toml", "MlopsDemo1/**/*.py"]
+
+[tool.ruff.lint]
+extend-select = ["I"]  # Add import sorting
+
+[tool.ruff.lint.isort]
+known-first-party = ["MlopsDemo1"]
+force-sort-within-sections = true
+
