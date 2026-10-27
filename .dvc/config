@@ -1,0 +1,4 @@
+[core]
+    remote = storage
+['remote "storage"']
+    url = ../mlopsdemo/gdrive::/1NxdWkESHyDb9ZqmT6n50g9Ee4wbEmpsp
